@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+font-family: 'Open Sans';	
+}
+img{
+    max-width: 100%;
+}
+ul{display: flex;flex-wrap: wrap;}
+li{
+    list-style: none;
+}
+a{text-decoration: none;}
+a:hover{}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/********************************
+header
+*********************************/
+header{padding: 50px 0;}
+.logo{
+    max-width: 20%;
+    flex-basis: 20%;
+}
+.logo a{
+    display: block;
+}
+.logo a img{}
+nav{
+    max-width: 80%;
+    flex-basis: 80%;
+}
+nav ul{
+    justify-content: flex-end;
+}
+nav ul li{}
+nav ul li a{
+    padding-left: 90px;
+    display: block;
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+nav ul li a:hover{}
+
+/*******************************
+baneer section
+********************************/
+.baneer-section{}
+.baneer-section img{}
+
+/*******************************
+blog section
+********************************/
+.blog-section{}
+article{
+    padding: 70px 35px;
+}
+article span{
+    font-size: 18px;
+    color: #9e9e9ed1;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+article h1{
+	font-size: 25px;
+	color: #848484;
+	font-weight: 600;
+	margin: 20px 0;
+}
+article h1 a{
+    font-size: 21px;
+    color: #848484;
+    font-weight: 600;
+    margin: 20px 0;
+}
+article a{
+    font-size: 18px;
+    color: #9e9e9ed1;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+article p{
+    font-size: 17px;
+    color: #848484;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+article a img{
+    width: 100%;
+}
+
+.post{
+    flex-basis: 50%;
+    max-width: 50%;
+    /* padding: 30px; */
+}
+
+
+/*****************************
+footer section
+******************************/
+footer{
+    background-color: #F0F0F0;
+    padding: 35px 0;
+}
+.footer-menu{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.footer-menu ul{}
+.footer-menu ul li{}
+.footer-menu ul li a{
+    padding-right: 20px;
+    display: block;
+    color: #333333eb;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition-duration: 0.4s;
+}
+.footer-menu ul li a:hover{}
+
+.social-menu{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.social-menu ul{
+    justify-content: flex-end;
+}
+.social-menu ul li{}
+.social-menu ul li span{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2b2424eb;
+    text-transform: capitalize;
+}
+.social-menu ul li a{
+    display: block;
+    padding-left: 25px;
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition-duration: 0.4s;
+}
+.social-menu ul li a:hover{
+    color: #00000094;
+} 
+
+
+@media (max-width: 1400px){
+	.container{
+		width: 1000px;
+	}
+}
+
+
+
+@media (max-width: 1100px){
+	.container{
+		width: 900px;
+	}
+	article h1 a{
+		font-size: 21px;
+	}
+}
+
+
+@media (max-width: 1000px){
+	.container{
+		width: 700px;
+	}
+
+		nav ul li a {
+    padding-left: 50px;
+    font-size: 16px;
+    
+  
+
+	}
+}
+
+@media (max-width: 700px){
+	.container{
+		width: 100%;
+	}
+
+    
+	.post{
+		flex-basis: 100%
+		max-width : 100%;
+	}
+}
+
